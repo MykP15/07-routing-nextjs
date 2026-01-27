@@ -36,6 +36,12 @@ function SidebarNotes() {
           Meeting
         </Link>
       </li>
+      <li className={css.menuItem}>
+        <Link
+          href={`/notes/filter/Shopping`} className={css.menuLink}>
+          Shopping
+        </Link>
+      </li>
     </ul>
 
   );
