@@ -13,7 +13,6 @@ import css from "@/app/notes/NotesPage.module.css";
 
 interface NotesClientProps {
   tag?: string;
-  initialPage: number;
 }
 
 interface FetchNotesResponse {
@@ -66,7 +65,7 @@ useEffect(() => {
 
       {isModalOpen && (
         <Modal onClose={() => setModalOpen(false)}>
-          <NoteForm onCancel={() => setModalOpen(false)} />
+          <NoteForm onClose={() => setModalOpen(false)} />
         </Modal>
       )}
     </div>

@@ -39,7 +39,7 @@ export default function NotePreviewClient({ noteId }: NotePreviewClientProps) {
   }
 
   return (
-    <Modal onClose={() => {}}>
+    <Modal onClose={handleBack}>
       <div className={css.item}>
         <div className={css.header}>
           <h2>{note.title}</h2>
